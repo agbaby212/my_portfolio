@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife | Mobile-first design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="brand" href="#top">FitLife</a>
+        <button class="menu_btn" id="menu_btn" type="button" aria-label="Open menu" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="menu" id="menu">
+            <a href="#plans">Workouts</a>
+            <a href="#features">Features</a>
+            <a href="#join">Join</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <h1>Get fit in 20 minutes a day</h1>
+            <p>Short workouts you can do anywhere, with no equipment.</p>
+            <a class="btn" href="#join">Start today</a>
+        </section>
+
+        <section class="block" id="plans">
+            <h2>Pick your workout</h2>
+            <div class="tabs" role="tablist">
+                <button class="tab active" type="button" data-tab="beginner" role="tab">Beginner</button>
+                <button class="tab" type="button" data-tab="strength" role="tab">Strength</button>
+                <button class="tab" type="button" data-tab="cardio" role="tab">Cardio</button>
+            </div>
+            <div class="panel" id="panel"></div>
+        </section>
+
+        <section class="block alt" id="features">
+            <h2>Why FitLife</h2>
+            <div class="features">
+                <article><i class="fa fa-clock-o"></i><h3>Quick sessions</h3><p>Workouts of 10 to 30 minutes that fit your day.</p></article>
+                <article><i class="fa fa-home"></i><h3>Train anywhere</h3><p>No gym needed. Use your living room.</p></article>
+                <article><i class="fa fa-line-chart"></i><h3>Track progress</h3><p>See your streak and results every week.</p></article>
+            </div>
+        </section>
+
+        <section class="block join" id="join">
+            <h2>Join FitLife</h2>
+            <form id="form" novalidate>
+                <input type="text" id="name" placeholder="Your name" aria-label="Your name" required>
+                <input type="email" id="email" placeholder="Your email" aria-label="Your email" required>
+                <button class="btn" type="submit">Sign up</button>
+            </form>
+            <p class="msg" id="msg" role="status"></p>
+        </section>
+    </main>
+
+    <footer class="footer"><p>&copy; 2026 FitLife. All rights reserved.</p></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
